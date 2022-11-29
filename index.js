@@ -62,7 +62,7 @@ function pluralizeRecords() {
     var lastChar_one_symbols = string.slice(string.length - 1);
 
     if(lastChar_one_symbols == 1){
-        alert('В результате выполнения запроса было найдено '+number+' запись');
+        alert('В результате выполнения запроса была найдена '+number+' запись');
     }
 
     if(lastChar_one_symbols == 2 || lastChar_one_symbols == 3 || lastChar_one_symbols == 4){
@@ -89,7 +89,7 @@ function  fibb(){
       // Получаем i-й элемент последовательности как сумму предыдущих двух
       fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
     }
-    alert(fibonacci.slice(0,number));
+    alert(fibonacci[number - 1]);
     }else{
     alert('Неправильный ввод');  
     }
